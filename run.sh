@@ -12,6 +12,4 @@ cat <<EOF > config.json
 EOF
 iptables -F
 nohup ./shadowsocks-server -c config.json &> /dev/null &
-ss -tnlp | grep 12288
-
 cat config.json
